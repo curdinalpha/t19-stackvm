@@ -1,0 +1,37 @@
+Python 3.12.16
+0
+test_basic_ops (test_vm.Arithmetic.test_basic_ops) ... ok
+test_i64_wraparound (test_vm.Arithmetic.test_i64_wraparound) ... ok
+test_signed_division_truncates_toward_zero (test_vm.Arithmetic.test_signed_division_truncates_toward_zero) ... ok
+test_stack_ops (test_vm.Arithmetic.test_stack_ops) ... ok
+test_chained_single_step_fiber (test_vm.Checkpoint.test_chained_single_step_fiber) ... ok
+test_checkpoint_at_every_instruction_boundary (test_vm.Checkpoint.test_checkpoint_at_every_instruction_boundary) ... ok
+test_checkpoint_does_not_alias_live_state (test_vm.Checkpoint.test_checkpoint_does_not_alias_live_state) ... ok
+test_corrupt_checkpoints_rejected (test_vm.Checkpoint.test_corrupt_checkpoints_rejected) ... ok
+test_resume_on_wrong_code_rejected (test_vm.Checkpoint.test_resume_on_wrong_code_rejected) ... ok
+test_roundtrip_is_byte_identical (test_vm.Checkpoint.test_roundtrip_is_byte_identical) ... ok
+test_call_ret_recursive_factorial (test_vm.ControlFlow.test_call_ret_recursive_factorial) ... ok
+test_falling_off_end_halts (test_vm.ControlFlow.test_falling_off_end_halts) ... ok
+test_nested_calls_keep_partial_operand_stack (test_vm.ControlFlow.test_nested_calls_keep_partial_operand_stack) ... ok
+test_raw_relative_offset_is_from_next_instruction (test_vm.ControlFlow.test_raw_relative_offset_is_from_next_instruction) ... ok
+test_relative_jumps_forward_and_backward (test_vm.ControlFlow.test_relative_jumps_forward_and_backward) ... ok
+test_yield_and_resume (test_vm.ControlFlow.test_yield_and_resume) ... ok
+test_bad_bytecode_rejected_at_load (test_vm.Faults.test_bad_bytecode_rejected_at_load) ... ok
+test_call_depth_limit (test_vm.Faults.test_call_depth_limit) ... ok
+test_div_and_mod_by_zero_atomic (test_vm.Faults.test_div_and_mod_by_zero_atomic) ... ok
+test_ret_without_frame (test_vm.Faults.test_ret_without_frame) ... ok
+test_stack_overflow_limit (test_vm.Faults.test_stack_overflow_limit) ... ok
+test_underflow (test_vm.Faults.test_underflow) ... ok
+test_random_programs_checkpointing_is_transparent (test_vm.Fuzz.test_random_programs_checkpointing_is_transparent) ... ok
+test_gas_deterministic_across_runs (test_vm.Gas.test_gas_deterministic_across_runs) ... ok
+test_gas_is_per_opcode_table (test_vm.Gas.test_gas_is_per_opcode_table) ... ok
+test_oog_checkpoint_topup (test_vm.Gas.test_oog_checkpoint_topup) ... ok
+test_out_of_gas_is_atomic_and_resumable (test_vm.Gas.test_out_of_gas_is_atomic_and_resumable) ... ok
+test_bytecode_encoding (test_vm.Spec.test_bytecode_encoding) ... ok
+test_single_file_size_limit (test_vm.Spec.test_single_file_size_limit) ... ok
+test_stdlib_only_imports (test_vm.Spec.test_stdlib_only_imports) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 1.277s
+
+OK
